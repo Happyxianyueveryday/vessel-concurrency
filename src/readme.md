@@ -17,6 +17,9 @@ Werkzeug/  -- 基础工具库
         wrmutex -- 写优先的读写锁 √
         fair_rwmutex -- 读写公平的读写锁 √
     Semaphore -- 信号量
+    AtomicPointer 
+        atomic_shared_ptr -- 线程安全的shared_ptr
+    SmartPointer
     
 Vessel/ -- 容器库
     Stack/ -- 栈
