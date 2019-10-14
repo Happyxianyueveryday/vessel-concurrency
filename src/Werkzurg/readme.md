@@ -17,8 +17,8 @@ Werkzeug/  -- 基础工具库
         shared_ptr -- 共享对象所有权的智能指针 √
         unique_ptr -- 独享对象所有权的智能指针 √
         weak_ptr -- 无对象所有权的弱智能指针 √
-    VersionPointer/ -- 版本指针
-        AtomicStampPointer -- 版本号指针
-        AtomicMarkablePointer 
+    AtomicPointer/ -- 版本指针
+        AtomicStampPointer -- 版本号指针 √
+        AtomicMarkablePointer -- 标志指针 √
     
 ```
