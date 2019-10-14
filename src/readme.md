@@ -15,24 +15,20 @@ Werkzeug/  -- 基础工具库
         SpinLock -- 非公平自旋锁 √
         TicketSpinLock -- 公平自旋锁（返回排队号） √
         TicketLocalSpinLock -- 公平自旋锁（不返回排队号）√
-        MCSLock -- 公平本地自旋锁 
-        ReentrantSpinLock -- 可重入自旋锁
     ReadWriteMutex/ -- 读写锁 
         rwmutex -- 读优先的读写锁 √
         wrmutex -- 写优先的读写锁 √
         fair_rwmutex -- 读写公平的读写锁 √
-    Semaphore -- 信号量
-    AtomicFlagPointer -- 原子标记指针
+    AtomicPointer -- 原子标记指针
         AtomicStampPointer -- 版本号指针 √
-        AtomicMarkablePointer -- 标志物指针
+        AtomicMarkablePointer -- 标志物指针 √
     SmartPointer/ -- 智能指针 
         shared_ptr -- 共享对象所有权的智能指针 √
         unique_ptr -- 独享对象所有权的智能指针 √
         weak_ptr -- 无对象所有权的弱智能指针 √
     AtomicSmartPointer -- 原子智能指针
         atomic_shared_ptr -- 线程安全的shared_ptr
-   
-    
+
 Vessel/ -- 容器库
     Stack/ -- 栈
         ConcurrentArrayStack -- 数组栈 √
