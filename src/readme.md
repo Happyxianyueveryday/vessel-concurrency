@@ -2,6 +2,8 @@
 
 基于C++的线程安全的工具容器库源码（# GB2312/GB18030编码）。
 
+GC，Werkzurg等几个部分都是为Vessel，也即最终的容器设计服务的，在容器设计中，部分容器使用了上述的工具。
+
 ## 目录
 
 ```
@@ -20,12 +22,15 @@ Werkzeug/  -- 基础工具库
         wrmutex -- 写优先的读写锁 √
         fair_rwmutex -- 读写公平的读写锁 √
     Semaphore -- 信号量
-    AtomicPointer -- 线程安全智能指针
-        atomic_shared_ptr -- 线程安全的shared_ptr
+    AtomicFlagPointer -- 原子标记指针
+        AtomicStampPointer -- 版本号指针 √
+        AtomicMarkablePointer -- 标志物指针
     SmartPointer/ -- 智能指针 
         shared_ptr -- 共享对象所有权的智能指针 √
         unique_ptr -- 独享对象所有权的智能指针 √
         weak_ptr -- 无对象所有权的弱智能指针 √
+    AtomicSmartPointer -- 原子智能指针
+        atomic_shared_ptr -- 线程安全的shared_ptr
    
     
 Vessel/ -- 容器库
