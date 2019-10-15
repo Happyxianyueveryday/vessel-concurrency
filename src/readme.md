@@ -8,7 +8,7 @@ GC，Werkzurg等几个部分都是为Vessel，也即最终的容器设计服务�
 
 ```
 GC/ -- 垃圾回收
-    MarkSweepGC -- 基于标记-清除(Mark&Sweep)算法的简单C++垃圾回收器
+    MarkSweepGC -- 基于标记-清除(Mark&Sweep)算法的简单C++垃圾回收器 预计10.15晚上完成
     
 Werkzeug/  -- 基础工具库
     SpinLock/ -- 自旋锁 
@@ -45,6 +45,8 @@ Vessel/ -- 容器库
         ConcurrentLinkedSet -- 基于链表的集合  √
         ConcurrentStrongHashSet -- 强一致性哈希集合（分段互斥锁） √
         ConcurrentWeakHashSet -- 弱一致性哈希集合（分段无锁读，或分段读写锁）√    
+    Iterator/ -- 迭代器
+        
     Map/ -- 
  ```
  
