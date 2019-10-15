@@ -26,14 +26,12 @@ Werkzeug/  -- 基础工具库
         shared_ptr -- 共享对象所有权的智能指针 √
         unique_ptr -- 独享对象所有权的智能指针 √
         weak_ptr -- 无对象所有权的弱智能指针 √
-    AtomicSmartPointer -- 原子智能指针
-        atomic_shared_ptr -- 线程安全的shared_ptr
 
 Vessel/ -- 容器库
     Stack/ -- 栈
         ConcurrentArrayStack -- 数组栈 √
         ConcurrentLinkedStack -- 链表栈 √
-        ConcurrentLockFreeStack -- 无锁栈
+        ConcurrentLockFreeStack -- 无锁栈 √
         ConcurrentBlockingStack -- 链表阻塞栈 √
     Queue/ --队列
         ConcurrentArrayQueue -- 环形数组单向队列 √
