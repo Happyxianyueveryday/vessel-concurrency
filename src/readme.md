@@ -45,9 +45,9 @@ Vessel/ -- 容器库
         ConcurrentLinkedSet -- 基于链表的集合  √
         ConcurrentStrongHashSet -- 强一致性哈希集合（分段互斥锁） √
         ConcurrentWeakHashSet -- 弱一致性哈希集合（分段无锁读，或分段读写锁）√    
-    Iterator/ -- 迭代器
+    Map/ -- 映射
+        ConcurrentLinkedMap -- 基于链表的映射
         
-    Map/ -- 
  ```
  
  ### 待完成时间线
