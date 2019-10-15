@@ -42,10 +42,12 @@ Vessel/ -- 容器库
     Vector/ -- 数组
         CopyOnWriteArrayList -- 写时复制数组容器 √
     Set/ -- 集合
+        ConcurrentStrongHashSet -- 强一致性并发哈希集合（分段互斥锁） √
+        ConcurrentWeakHashSet -- 弱一致性并发哈希集合（分段无锁读，或分段读写锁）√    
         ConcurrentLinkedSet -- 基于链表的集合  √
-        ConcurrentStrongHashSet -- 强一致性哈希集合（分段互斥锁） √
-        ConcurrentWeakHashSet -- 弱一致性哈希集合（分段无锁读，或分段读写锁）√    
     Map/ -- 映射
+        ConcurrentStrongHashMap -- 强一致性并发哈希映射（分段互斥锁） √
+        ConcurrentWeakHashSet -- 弱一致性并发哈希集合（分段无锁读，或分段读写锁） √
         ConcurrentLinkedMap -- 基于链表的映射
         
  ```
