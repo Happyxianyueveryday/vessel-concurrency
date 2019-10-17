@@ -21,7 +21,7 @@ Werkzeug/  -- 基础工具库
         rwmutex -- 读优先的读写锁 √
         wrmutex -- 写优先的读写锁 √
         fair_rwmutex -- 读写公平的读写锁 √
-    AtomicPointer -- 原子标记指针
+    AtomicPointer -- 原子标记指针 
         AtomicStampPointer -- 版本号指针 √
         AtomicMarkablePointer -- 标志物指针 √
     SmartPointer/ -- 智能指针 
