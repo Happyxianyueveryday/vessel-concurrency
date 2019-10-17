@@ -8,7 +8,7 @@ GC，Werkzurg等几个部分都是为Vessel，也即最终的容器设计服务�
 
 ```
 GC/ -- 垃圾回收
-    MarkSweepGC -- 基于标记-清除(Mark&Sweep)算法的简单C++垃圾回收器 （10.15发现bug，已撤回删除，正在debug，预计10.18完成）
+    MarkSweepGC -- 基于标记-清除(Mark&Sweep)算法的简单C++垃圾回收器 （fixing bugs...）
     
 Werkzeug/  -- 基础工具库
     SpinLock/ -- 自旋锁 
