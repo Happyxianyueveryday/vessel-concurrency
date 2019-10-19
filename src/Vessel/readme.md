@@ -5,7 +5,7 @@ c++常用并发容器。
 # 目录
 
 ```
-Vessel/ -- 并发容器
+Vessel/ -- 常用并发容器
     Stack/ -- 栈
         ConcurrentArrayStack -- 数组栈 √
         ConcurrentLinkedStack -- 链表栈 √
