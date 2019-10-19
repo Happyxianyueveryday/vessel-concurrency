@@ -1,4 +1,4 @@
-# vessel-concurrency/src/GC
+# src/GC
 
 C++垃圾收集机制实现尝试。
 
