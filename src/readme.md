@@ -10,16 +10,17 @@ GC，Werkzurg等几个部分都是为Vessel，也即最终的容器设计服务�
 GC/ -- 垃圾回收工具
     MarkSweepGC -- 基于标记-清除(Mark&Sweep)算法的简单C++垃圾回收器 √
 
-Experience/ -- 注重改善cpp使用体验的标准库补充
+Experience/ -- cpp标准库补充
     BigInteger -- 大整数基础类 √
+    AtomicSharedPtrSup -- stl的shared_ptr的原子性补充方法 √
     
 Werkzeug/  -- 并发基础工具库
     SpinLock/ -- 自旋锁 
         SpinLock -- 非公平自旋锁 √
         TicketSpinLock -- 公平自旋锁（返回排队号） √
         TicketLocalSpinLock -- 公平自旋锁（不返回排队号）√
-        CLSLock -- 本地公平自旋锁 
-        MCSLock -- 本地公平自旋锁 
+        CLSLock -- 本地公平自旋锁（适用于SMP结构） √
+        MCSLock -- 本地公平自旋锁（适用于NUMA结构）√
     ReadWriteMutex/ -- 读写锁 
         rwmutex -- 读优先的读写锁 √
         wrmutex -- 写优先的读写锁 √
@@ -36,12 +37,12 @@ Vessel/ -- 容器库
     Stack/ -- 栈
         ConcurrentArrayStack -- 数组栈 √
         ConcurrentLinkedStack -- 链表栈 √
-        ConcurrentLockFreeStack -- 无锁栈 √
+        ConcurrentLockFreeStack -- 无锁栈（预计10.22完成）
         ConcurrentBlockingStack -- 链表阻塞栈 √
     Queue/ --队列
         ConcurrentArrayQueue -- 环形数组单向队列 √
         ConcurrentLinkedQueue -- 链表单向队列 √
-        ConcurrentLockFreeStack -- 无锁单向队列
+        ConcurrentLockFreeStack -- 无锁单向队列（预计10.22完成）
         LinkedBlockingQueue -- 链表阻塞队列 √
         ArrayBlockingQueue -- 环形数组阻塞队列 √ 
     Vector/ -- 数组
@@ -49,10 +50,9 @@ Vessel/ -- 容器库
     Set/ -- 集合
         ConcurrentStrongHashSet -- 强一致性并发哈希集合（分段互斥锁） √
         ConcurrentWeakHashSet -- 弱一致性并发哈希集合（分段无锁读，或分段读写锁）√    
-        ConcurrentLinkedSet -- 基于链表的集合  √
+        ConcurrentLinkedSet -- 基于链表的集合 √
     Map/ -- 映射
-        ConcurrentStrongHashMap -- 强一致性并发哈希映射（分段互斥锁） √
-        ConcurrentWeakHashSet -- 弱一致性并发哈希集合（分段无锁读，或分段读写锁） 
+        ConcurrentStrongHashMap -- 强一致性并发哈希映射（分段互斥锁） √ 
         
 AutoTest/ -- 本项目的测试工具
     （fixing bugs，稍后恢复代码）
