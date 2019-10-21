@@ -18,8 +18,8 @@ Werkzeug/  -- 并发基础工具库
         SpinLock -- 非公平自旋锁 √
         TicketSpinLock -- 公平自旋锁（返回排队号） √
         TicketLocalSpinLock -- 公平自旋锁（不返回排队号）√
-        CLSLock -- 本地公平自旋锁 √
-        MCSLock -- 本地公平自旋锁 预计10.19完成
+        CLSLock -- 本地公平自旋锁 
+        MCSLock -- 本地公平自旋锁 
     ReadWriteMutex/ -- 读写锁 
         rwmutex -- 读优先的读写锁 √
         wrmutex -- 写优先的读写锁 √
