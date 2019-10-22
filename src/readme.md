@@ -12,7 +12,8 @@ GC/ -- 垃圾回收工具
 
 Experience/ -- cpp标准库补充
     BigInteger -- 大整数基础类 √
-    AtomicSharedPtrSup -- stl的shared_ptr的原子性补充方法 √
+    Polynomial -- 多项式基础类 √
+    PolynomialCalculator -- 多项式计算器 √
     
 Werkzeug/  -- 并发基础工具库
     SpinLock/ -- 自旋锁 
