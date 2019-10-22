@@ -9,11 +9,6 @@ GC，Werkzurg等几个部分都是为Vessel，也即最终的容器设计服务�
 ```
 GC/ -- 垃圾回收工具
     MarkSweepGC -- 基于标记-清除(Mark&Sweep)算法的简单C++垃圾回收器 √
-
-Experience/ -- cpp标准库补充
-    BigInteger -- 大整数基础类 √
-    Polynomial -- 多项式基础类 √
-    PolynomialCalculator -- 多项式计算器 √
     
 Werkzeug/  -- 并发基础工具库
     SpinLock/ -- 自旋锁 
@@ -33,6 +28,10 @@ Werkzeug/  -- 并发基础工具库
         shared_ptr -- 共享对象所有权的智能指针 √
         unique_ptr -- 独享对象所有权的智能指针 √
         weak_ptr -- 无对象所有权的弱智能指针 √
+
+Experience/ -- cpp标准库补充
+    BigInteger -- 大整数基础类 √
+    Polynomial -- 多项式基础类 √
 
 Vessel/ -- 容器库
     Stack/ -- 栈
