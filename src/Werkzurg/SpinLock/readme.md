@@ -10,7 +10,7 @@ SpinLock/ -- 自旋锁
     TicketSpinLock -- 公平自旋锁（暴露排队号）√
     TicketLocalSpinLock -- 公平自旋锁（不暴露排队号）√
     CLHLock -- 公平本地自旋锁 √
-    MCSLock -- 公平本地自旋锁 
+    MCSLock -- 公平本地自旋锁 √
 ```
 
 ## 附注和选用建议
