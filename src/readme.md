@@ -45,7 +45,6 @@ Vessel/ -- 容器库
     Queue/ --队列
         ConcurrentArrayQueue -- 环形数组单向队列 √
         ConcurrentLinkedQueue -- 链表单向队列 √
-        ConcurrentLockFreeQueue -- 无锁单向队列（预计10.24完成）
         LinkedBlockingQueue -- 链表阻塞队列 √
         ArrayBlockingQueue -- 环形数组阻塞队列 √ 
     Vector/ -- 数组
