@@ -32,17 +32,20 @@ Werkzeug/  -- 并发基础工具库
 Experience/ -- cpp标准库补充
     BigInteger -- 大整数基础类 √
     Polynomial -- 多项式基础类 √
+    CacheModel/ -- 缓存模型 
+        FIFOCache -- 先进先出置换缓存
+        LRUCache -- 最近最少使用置换缓存
 
 Vessel/ -- 容器库
     Stack/ -- 栈
         ConcurrentArrayStack -- 数组栈 √
         ConcurrentLinkedStack -- 链表栈 √
-        ConcurrentLockFreeStack -- 无锁栈（预计10.22完成）
+        ConcurrentLockFreeStack -- 无锁栈（预计10.24完成）
         ConcurrentBlockingStack -- 链表阻塞栈 √
     Queue/ --队列
         ConcurrentArrayQueue -- 环形数组单向队列 √
         ConcurrentLinkedQueue -- 链表单向队列 √
-        ConcurrentLockFreeStack -- 无锁单向队列（预计10.22完成）
+        ConcurrentLockFreeQueue -- 无锁单向队列（预计10.24完成）
         LinkedBlockingQueue -- 链表阻塞队列 √
         ArrayBlockingQueue -- 环形数组阻塞队列 √ 
     Vector/ -- 数组
