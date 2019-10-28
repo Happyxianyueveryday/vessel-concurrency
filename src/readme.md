@@ -21,6 +21,7 @@ Werkzeug/  -- 并发基础工具库
         rwmutex -- 读优先的读写锁 √
         wrmutex -- 写优先的读写锁 √
         fair_rwmutex -- 读写公平的读写锁 √
+    Semaphore -- 信号量 √
     AtomicPointer -- 原子标记指针 
         AtomicStampPointer -- 版本号指针 √
         AtomicMarkablePointer -- 标志物指针 √
@@ -37,7 +38,7 @@ Vessel/ -- 容器库
     Stack/ -- 栈
         ConcurrentArrayStack -- 数组栈 √
         ConcurrentLinkedStack -- 链表栈 √
-        ConcurrentLockFreeStack -- 无锁栈（预计10.25完成）
+        ConcurrentLockFreeStack -- 无锁栈（预计10.29完成）
         ConcurrentBlockingStack -- 链表阻塞栈 √
     Queue/ --队列
         ConcurrentArrayQueue -- 环形数组单向队列 √
@@ -60,7 +61,6 @@ AutoTest/ -- 本项目的测试工具
  ### 待完成计划
 ```
 ReentrantSpinLock -- 可重入自旋锁（10.26）
-Semaphore -- 信号量
 AtomicPointer -- 线程安全智能指针
 atomic_shared_ptr -- 线程安全的shared_ptr
 CacheModel/ -- 缓存模型 
