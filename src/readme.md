@@ -30,9 +30,10 @@ Werkzeug/  -- 并发基础工具库
         unique_ptr -- 独享对象所有权的智能指针 √
         weak_ptr -- 无对象所有权的弱智能指针 √
 
-Experience/ -- cpp标准库补充
+Experience/ -- 实用工具
     BigInteger -- 大整数基础类 √
     Polynomial -- 多项式基础类 √
+    PolyCaculator -- 多项式计算器 √
 
 Vessel/ -- 容器库
     Stack/ -- 栈
