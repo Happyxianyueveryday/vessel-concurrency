@@ -29,6 +29,9 @@ Werkzeug/  -- 并发基础工具库
         shared_ptr -- 共享对象所有权的智能指针 √
         unique_ptr -- 独享对象所有权的智能指针 √
         weak_ptr -- 无对象所有权的弱智能指针 √
+    CacheModel/ -- 缓存模型 
+        FIFOCache -- 先进先出置换缓存 √
+        LRUCache -- 最近最少使用置换缓存 √
 
 Experience/ -- 实用工具
     BigInteger -- 大整数基础类 √
@@ -39,11 +42,12 @@ Vessel/ -- 容器库
     Stack/ -- 栈
         ConcurrentArrayStack -- 数组栈 √
         ConcurrentLinkedStack -- 链表栈 √
-        ConcurrentLockFreeStack -- 无锁栈（预计10.29完成）
+        ConcurrentLockFreeStack -- 无锁栈 √
         ConcurrentBlockingStack -- 链表阻塞栈 √
     Queue/ --队列
         ConcurrentArrayQueue -- 环形数组单向队列 √
         ConcurrentLinkedQueue -- 链表单向队列 √
+        ConcurrentLockFreeQueue -- 无锁队列 （预计11.7完成）
         LinkedBlockingQueue -- 链表阻塞队列 √
         ArrayBlockingQueue -- 环形数组阻塞队列 √ 
     Vector/ -- 数组
@@ -61,12 +65,9 @@ AutoTest/ -- 本项目的测试工具
  
  ### 待完成计划
 ```
-ReentrantSpinLock -- 可重入自旋锁（10.26）
+ReentrantSpinLock -- 可重入自旋锁
 AtomicPointer -- 线程安全智能指针
 atomic_shared_ptr -- 线程安全的shared_ptr
-CacheModel/ -- 缓存模型 
-        FIFOCache -- 先进先出置换缓存
-        LRUCache -- 最近最少使用置换缓存
 ```
 
 
