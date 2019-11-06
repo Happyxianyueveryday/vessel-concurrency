@@ -20,5 +20,6 @@ Werkzeug/  -- 基础工具库
     AtomicPointer/ -- 版本指针
         AtomicStampPointer -- 版本号指针 √
         AtomicMarkablePointer -- 标志指针 √
+    CatchModel/ -- 缓存模型
     
 ```
