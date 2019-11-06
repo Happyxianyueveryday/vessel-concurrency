@@ -20,6 +20,9 @@ Werkzeug/  -- 基础工具库
     AtomicPointer/ -- 版本指针
         AtomicStampPointer -- 版本号指针 √
         AtomicMarkablePointer -- 标志指针 √
-    CatchModel/ -- 缓存模型
-    
+    CacheModel/ -- 缓存模型 
+        FIFOCache -- 先进先出置换缓存 √
+        LIFOCache -- 后进先出置换缓存 √
+        LRUCache -- 最近最少使用置换缓存 √
+        MRUCache -- 最近最常使用置换缓存 （预计11.7完成）
 ```
