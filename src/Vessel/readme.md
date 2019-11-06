@@ -14,7 +14,7 @@ Vessel/ -- 常用并发容器
     Queue/ --队列
         ConcurrentArrayQueue -- 环形数组单向队列 √
         ConcurrentLinkedQueue -- 链表单向队列 √
-        ConcurrentLockFreeStack -- 无锁单向队列
+        ConcurrentLockFreeStack -- 无锁单向队列 √
         LinkedBlockingQueue -- 链表阻塞队列 √
         ArrayBlockingQueue -- 环形数组阻塞队列 √ 
     Vector/ -- 数组
