@@ -29,11 +29,11 @@ Werkzeug/  -- 并发基础工具库
         shared_ptr -- 共享对象所有权的智能指针 √
         unique_ptr -- 独享对象所有权的智能指针 √
         weak_ptr -- 无对象所有权的弱智能指针 √
-    CacheModel/ -- 缓存模型 
+    CacheModel/ -- 缓存模型 （11.10）
         FIFOCache -- 先进先出置换缓存 √
         LIFOCache -- 后进先出置换缓存 √
         LRUCache -- 最近最少使用置换缓存 √
-        MRUCache -- 最近最常使用置换缓存 （预计11.7完成）
+        MRUCache -- 最近最常使用置换缓存 √
 
 Experience/ -- 实用工具
     BigInteger -- 大整数基础类 √
@@ -49,7 +49,7 @@ Vessel/ -- 容器库
     Queue/ --队列
         ConcurrentArrayQueue -- 环形数组单向队列 √
         ConcurrentLinkedQueue -- 链表单向队列 √
-        ConcurrentLockFreeQueue -- 无锁队列 （预计11.7完成）
+        ConcurrentLockFreeQueue -- 无锁队列 
         LinkedBlockingQueue -- 链表阻塞队列 √
         ArrayBlockingQueue -- 环形数组阻塞队列 √ 
     Vector/ -- 数组
