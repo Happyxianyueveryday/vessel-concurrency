@@ -1,4 +1,4 @@
-# src/WerkZurg/SpinLock: 自旋锁
+## src/Werkzurg/SpinLock: 自旋锁
 
 提供cpp11原生线程库中缺失的纯自旋锁实现方案。
 
